@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remover Palavras Dark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="w-full h-screen text-gray-600 flex flex-col justify-center items-center"
+  >
+    <h1 class="text-2xl font-bold mb-2">Ocultador de palavras</h1>
+    <form
+      action=""
+      class="w-full max-w-md flex flex-col gap-2"
+      onsubmit="transformText(event)"
+    >
+      <textarea
+        placeholder="Escreva aqui..."
+        id="word"
+        class="border p-2 rounded"
+      ></textarea>
+      <button
+        type="submit"
+        class="bg-blue-600 p-2 rounded text-white text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Remover Palavras Dark
+      </button>
+
+      <textarea
+        placeholder="Resultado..."
+        id="result"
+        class="border p-2 rounded"
+      ></textarea>
+      <button
+        type="button"
+        onclick="copiarHtml()"
+        class="bg-blue-600 p-2 rounded text-white text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Copiar
+      </button>
+    </form>
+
+    <small class="mt-4 text-gray-400"
+      >Não nos responsabilizamos por quaisquer banimentos em suas contas de
+      anúncios.</small
+    >
+    <script>
+      function transformText(e) {
+        e.preventDefault();
+        const text = document.getElementById("word").value;
+        const textLetters = text.split("");
+
+        const transformedText = textLetters.map((letter) => {
+          let a = "";
+          a += "\u200B"; // Adiciona um caractere de espaço zero-width
+          switch (letter) {
+            case "a":
+              a += "\u0430";
+              break; // а (cirílico)
+            case "c":
+              a += "\u0441";
+              break; // с (cirílico)
+            case "e":
+              a += "\u0435";
+              break; // е (cirílico)
+            case "i":
+              a += "\u0456";
+              break; // і (cirílico)
+            case "j":
+              a += "\u0458";
+              break; // ј (cirílico)
+            case "o":
+              a += "\u043E";
+              break; // о (cirílico)
+            case "p":
+              a += "\u0440";
+              break; // р (cirílico)
+            case "s":
+              a += "\u0455";
+              break; // ѕ (cirílico)
+            case "x":
+              a += "\u0445";
+              break; // х (cirílico)
+            case "y":
+              a += "\u0443";
+              break; // у (cirílico)
+            case "A":
+              a += "\u0410";
+              break; // А (cirílico)
+            case "B":
+              a += "\u0412";
+              break; // В (cirílico)
+            case "C":
+              a += "\u0421";
+              break; // С (cirílico)
+            case "E":
+              a += "\u0415";
+              break; // Е (cirílico)
+            case "H":
+              a += "\u041D";
+              break; // Н (cirílico)
+            case "I":
+              a += "I";
+              break; // I (latino, sem mapeamento)
+            case "K":
+              a += "\u039A";
+              break; // Κ (grego)
+            case "M":
+              a += "\u041C";
+              break; // М (cirílico)
+            case "N":
+              a += "\u039D";
+              break; // Ν (grego)
+            case "O":
+              a += "\u041E";
+              break; // О (cirílico)
+            case "P":
+              a += "\u0420";
+              break; // Р (cirílico)
+            case "S":
+              a += "\u0405";
+              break; // Ѕ (cirílico)
+            case "T":
+              a += "\u0422";
+              break; // Т (cirílico)
+            case "X":
+              a += "\u0425";
+              break; // Х (cirílico)
+            case "Y":
+              a += "\u03A5";
+              break; // Υ (grego)
+            case "Z":
+              a += "\u0396";
+              break; // Ζ (grego)
+            case " ":
+              a += " ";
+              break;
+            default:
+              a += letter;
+          }
+
+          return a;
+        });
+
+        document.getElementById("result").value = transformedText.join("");
+      }
+
+      function copiarHtml() {
+        document.getElementById("result").select();
+
+        document.execCommand("copy");
+      }
+    </script>
+  </body>
+</html>
