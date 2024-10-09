@@ -1,0 +1,17 @@
+<script>
+  var whatsappUrl =
+    "https://wa.me/?text=Quero%20mais%20informa%C3%A7%C3%B5es"; //Link do whatsapp
+  var redirectTime = 10; // 10s - Tempo em segundos até o redirecionamento
+  var whatsappUrlObj = new URL(whatsappUrl);
+
+  const possibleNumbers = ["NUMERO"];
+
+  setTimeout(function () {
+    var phone =
+      possibleNumbers[Math.floor(Math.random() * possibleNumbers.length)];
+
+      whatsappUrlObj.searchParams.set('phone', phone)
+
+    window.location.href = whatsappUrlObj.toString();
+  }, redirectTime * 1000);
+</script>
