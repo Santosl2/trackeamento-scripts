@@ -1,6 +1,7 @@
 <script>
+  var message = encodeURI('Olá! Gostaria ')
   var whatsappUrl =
-    "https://wa.me/?text=Quero%20mais%20informa%C3%A7%C3%B5es"; //Link do whatsapp
+    `https://wa.me/?text=${message}😁😁'`; //Link do whatsapp
   var redirectTime = 10; // 10s - Tempo em segundos até o redirecionamento
   var whatsappUrlObj = new URL(whatsappUrl);
 
