@@ -1,9 +1,13 @@
 // Description: This script creates variables in Google Tag Manager for Hotmart webhook data.
 // Created by: Matheus Filype
-// Cole this code in the browser console while on the Google Tag Manager variables page.
+// Paste this code in the browser console while on the Google Tag Manager variables page.
 const entries = {
-  "ed - webhook - hotmart - email": "data.buyer.email",
-  "ed - webhook - hotmart - sck": "data.purchase.origin.xcod",
+  "ed - webhook - hotmart - product.id": "product.id",
+  "ed - webhook - hotmart - product.name": "product.name",
+  "ed - webhook - hotmart - email": "buyer.email",
+  "ed - webhook - hotmart - xcod": "purchase.origin.xcod",
+  "ed - webhook - hotmart - sck": "purchase.origin.sck",
+  "ed - webhook - hotmart - name": "buyer.name",
   "ed - webhook - hotmart - first_name": "buyer.first_name",
   "ed - webhook - hotmart - last_name": "buyer.last_name",
   "ed - webhook - hotmart - checkout_phone": "buyer.checkout_phone",
@@ -21,10 +25,10 @@ const entries = {
   "ed - webhook - hotmart - full_price.value":
     "buyer.purchase.full_price.value",
   "ed - webhook - hotmart - full_price.currency_value":
-    "buyer.purchase.full_price.currency_value",
+    "purchase.full_price.currency_value",
   "ed - webhook - hotmart - full_price.currency_value":
-    "buyer.purchase.full_price.currency_value",
-  "ed - webhook - hotmart - transaction": "buyer.purchase.purchase.transaction",
+    "purchase.full_price.currency_value",
+  "ed - webhook - hotmart - transaction": "purchase.transaction",
 };
 
 // Note: The XSRF token is specific to your session and may change.
@@ -42,10 +46,15 @@ const headers = {
   "x-xsrf-token": XSRF_TOKEN,
 };
 
-const baseURL =
-  "https://tagmanager.google.com/api/accounts/6265994503/containers/217720704/workspaces/14/variables";
+// Change baseURL
+// The baseURL should point to the Google Tag Manager API endpoint for creating variables.
+// To find the correct URL, you can inspect the network requests made by the Google Tag Manager interface when you create a variable manually.
 
-console.log("Creating variables...", Object.keys(entries).length);
+const baseURL =
+  "https://tagmanager.google.com/api/accounts/:accountId/containers/:containerId/workspaces/:workspaceId/variables";
+
+console.log("Creating Hotmart variables...", Object.keys(entries).length);
+
 Object.entries(entries).forEach(([name, keyPath]) => {
   fetch(baseURL, {
     method: "POST",

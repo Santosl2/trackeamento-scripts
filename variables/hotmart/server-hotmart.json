@@ -1,0 +1,516 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2025-06-13 21:33:09",
+  "containerVersion": {
+    "path": "accounts/6265994503/containers/217720704/versions/0",
+    "accountId": "6265994503",
+    "containerId": "217720704",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/6265994503/containers/217720704",
+      "accountId": "6265994503",
+      "containerId": "217720704",
+      "name": "Server - Variables",
+      "publicId": "GTM-PJN8T2S5",
+      "usageContext": ["SERVER"],
+      "fingerprint": "1744917113159",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6265994503/containers/217720704/workspaces?apiLink=container",
+      "features": {
+        "supportUserPermissions": true,
+        "supportEnvironments": true,
+        "supportWorkspaces": true,
+        "supportGtagConfigs": false,
+        "supportBuiltInVariables": true,
+        "supportClients": true,
+        "supportFolders": true,
+        "supportTags": true,
+        "supportTemplates": true,
+        "supportTriggers": true,
+        "supportVariables": true,
+        "supportVersions": true,
+        "supportZones": true,
+        "supportTransformations": true
+      },
+      "tagIds": ["GTM-PJN8T2S5"],
+      "taggingServerUrls": ["https://server.dominio.com"]
+    },
+    "variable": [
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "143",
+        "name": "ed - webhook - hotmart - country",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.country"
+          }
+        ],
+        "fingerprint": "1749843919759",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "144",
+        "name": "ed - webhook - hotmart - xcod",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.purchase.origin.xcod"
+          }
+        ],
+        "fingerprint": "1749847976844",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "145",
+        "name": "ed - webhook - hotmart - email",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.email"
+          }
+        ],
+        "fingerprint": "1749845500310",
+        "formatValue": {
+          "caseConversionType": "LOWERCASE"
+        }
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "146",
+        "name": "ed - webhook - hotmart - document",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.document"
+          }
+        ],
+        "fingerprint": "1749843921061",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "147",
+        "name": "ed - webhook - hotmart - full_price.currency_value",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.purchase.full_price.currency_value"
+          }
+        ],
+        "fingerprint": "1749844541802",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "148",
+        "name": "ed - webhook - hotmart - state",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.state"
+          }
+        ],
+        "fingerprint": "1749844631645",
+        "formatValue": {
+          "caseConversionType": "LOWERCASE"
+        }
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "149",
+        "name": "ed - webhook - hotmart - country_iso",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.country_iso"
+          }
+        ],
+        "fingerprint": "1749844610964",
+        "formatValue": {
+          "caseConversionType": "LOWERCASE"
+        }
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "150",
+        "name": "ed - webhook - hotmart - city",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.city"
+          }
+        ],
+        "fingerprint": "1749843922255",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "151",
+        "name": "ed - webhook - hotmart - full_price.value",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.purchase.full_price.value"
+          }
+        ],
+        "fingerprint": "1749844564827",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "152",
+        "name": "ed - webhook - hotmart - document_type",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.document_type"
+          }
+        ],
+        "fingerprint": "1749843922888",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "153",
+        "name": "ed - webhook - hotmart - address",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.address"
+          }
+        ],
+        "fingerprint": "1749843923253",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "154",
+        "name": "ed - webhook - hotmart - first_name",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.first_name"
+          }
+        ],
+        "fingerprint": "1749844387701",
+        "formatValue": {
+          "caseConversionType": "LOWERCASE"
+        }
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "155",
+        "name": "ed - webhook - hotmart - number",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.number"
+          }
+        ],
+        "fingerprint": "1749843924031",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "156",
+        "name": "ed - webhook - hotmart - neighborhood",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.neighborhood"
+          }
+        ],
+        "fingerprint": "1749844765614",
+        "formatValue": {
+          "caseConversionType": "LOWERCASE"
+        }
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "157",
+        "name": "ed - webhook - hotmart - transaction",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.purchase.transaction"
+          }
+        ],
+        "fingerprint": "1749846926582",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "158",
+        "name": "ed - webhook - hotmart - checkout_phone",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.checkout_phone"
+          }
+        ],
+        "fingerprint": "1749843925876",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "159",
+        "name": "ed - webhook - hotmart - complement",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.complement"
+          }
+        ],
+        "fingerprint": "1749843926556",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "160",
+        "name": "ed - webhook - hotmart - zipcode",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.address.zipcode"
+          }
+        ],
+        "fingerprint": "1749843927320",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "161",
+        "name": "ed - webhook - hotmart - last_name",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.last_name"
+          }
+        ],
+        "fingerprint": "1749844397365",
+        "formatValue": {
+          "caseConversionType": "LOWERCASE"
+        }
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "167",
+        "name": "ed - webhook - hotmart - product.id",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.product.id"
+          }
+        ],
+        "fingerprint": "1749846843430",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "169",
+        "name": "ed - webhook - hotmart - sck",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.purchase.origin.sck"
+          }
+        ],
+        "fingerprint": "1749847968456",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6265994503",
+        "containerId": "217720704",
+        "variableId": "174",
+        "name": "ed - webhook - hotmart - name",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "data.buyer.name"
+          }
+        ],
+        "fingerprint": "1749850344080",
+        "formatValue": {}
+      }
+    ],
+    "fingerprint": "1749850389348",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6265994503/containers/217720704/versions/0?apiLink=version"
+  }
+}
